@@ -13,6 +13,12 @@ def main():
   def show_inventory():
     for i in inventory:
           print(i)
+  
+  #Función para eliminar items del inventario
+  def drop_item():
+    print(inventory)
+    drop = int(input("¿Qué item quieres eliminar?: "))
+    inventory.pop(drop)
     
   #Bucle
   option = 0
@@ -31,6 +37,9 @@ def main():
       
       case 2:
         add_inventory()
+        
+      case 3:
+        drop_item()
       
       
       case 5:
