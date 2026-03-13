@@ -12,7 +12,7 @@ def main():
   #Función para ver inventario
   def show_inventory():
     for i in inventory:
-          print(i)
+          print("-", i)
   
   #Función para eliminar items del inventario
   def drop_item():
