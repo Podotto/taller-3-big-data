@@ -7,7 +7,7 @@ def main():
   def add_inventory():
     add_item = input("Añade un item al inventario: ")
     inventory.append(add_item)
-    return add_item
+    print(f"Añadiste el item {add_item}")
   
   #Función para ver inventario
   def show_inventory():
@@ -30,8 +30,8 @@ def main():
         show_inventory()
       
       case 2:
-        add_item = add_inventory()
-        print(f"Añadiste el item {add_item}")
+        add_inventory()
+      
       
       case 5:
         print("Saliste de tu inventario.")
