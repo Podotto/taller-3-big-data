@@ -9,4 +9,20 @@ def main():
     inventory.append(add_inventory)
     return add_inventory
   
+  #Bucle
+  option = 0
+  while option != 5:
+    
+    #Menú del videojuego
+    print("Inventario\n1. Ver inventario\n2. Agregar item al inventario\n3. Eliminar item del inventario\n4. Buscar item en el inventario\n5. Salir")    
+    
+    #Input del usuario
+    option = int(input("¿Qué quieres hacer (1-5)?: "))
+    
+    #Casos
+    match option:
+      
+      case 5:
+        print("Saliste de tu inventario.")
+    
 main()
