@@ -6,9 +6,14 @@ def main():
   #Función para agregar items a la lista
   def add_inventory():
     add_item = input("Añade un item al inventario: ")
-    inventory.append(add_inventory)
-    return add_inventory
+    inventory.append(add_item)
+    return add_item
   
+  #Función para ver inventario
+  def show_inventory():
+    for i in inventory:
+          print(i)
+    
   #Bucle
   option = 0
   while option != 5:
@@ -21,8 +26,15 @@ def main():
     
     #Casos
     match option:
+      case 1:
+        show_inventory()
+      
+      case 2:
+        add_item = add_inventory()
+        print(f"Añadiste el item {add_item}")
       
       case 5:
         print("Saliste de tu inventario.")
+        
     
 main()
