@@ -38,5 +38,8 @@ def main():
       
       case 3: 
         print(f"El promedio final es {round(calculate_average(), 2)}")
+        
+      case 4:
+        print("No es una opción válida.")
   
 main()
