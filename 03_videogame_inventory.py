@@ -19,6 +19,16 @@ def main():
     print(inventory)
     drop = int(input("¿Qué item quieres eliminar?: "))
     inventory.pop(drop)
+  
+  #Funció para buscar item
+  def search_item():
+    look_up = input("¿Qué item buscas?: ")
+    
+    if look_up in inventory:
+      print(f"{look_up} está en tu inventario")
+      
+    else:
+      print("No está en tu inventario.")
     
   #Bucle
   option = 0
@@ -40,10 +50,15 @@ def main():
         
       case 3:
         drop_item()
-      
+        
+      case 4:
+        search_item()
       
       case 5:
         print("Saliste de tu inventario.")
+        
+      case 6: 
+        print("No es una opción válida.")
         
     
 main()
