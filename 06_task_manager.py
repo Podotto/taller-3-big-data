@@ -20,17 +20,22 @@ def main():
     for i in completed_tasks:
       print("[☑]", i)
 
-   #Función para eliminar tareas
+  #Función para eliminar tareas
   def delete_task():
     
-    for i in to_do_tasks:
-      print ("☐", i)
+    for i, v in enumerate(to_do_tasks):
+      print (i, v)
     
-    remove_task = int(input("¿Cuál tarea quieres eliminar?"))
-    
+    remove_task = int(input("¿Cuál tarea quieres eliminar?: "))
     to_do_tasks.pop(remove_task)
-    print(f"Eliminaste {remove_task}")
+    print(f"Eliminaste la tarea en la posición {remove_task}")
     
+  #Función para completar tarea
+  def complete_task():
+    
+    for i, v in enumerate(to_do_tasks):
+      print ("☐", i, v)
+      
   #Bucle
   while True:
     
@@ -47,6 +52,12 @@ def main():
         
       case 2:
         show_tasks()
+        
+      case 3:
+        delete_task()
+        
+      case 4: 
+        complete_task()
         
       case 5:
         print("¡Hasta luego!")
