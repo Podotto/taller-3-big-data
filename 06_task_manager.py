@@ -20,4 +20,15 @@ def main():
     for i in completed_tasks:
       print("[☑]", i)
 
+   #Función para eliminar tareas
+  def delete_task():
+    
+    for i in to_do_tasks:
+      print ("☐", i)
+    
+    remove_task = int(input("¿Cuál tarea quieres eliminar?"))
+    
+    to_do_tasks.pop(remove_task)
+    print(f"Eliminaste {remove_task}")
+
 main()
