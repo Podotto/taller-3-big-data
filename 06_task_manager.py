@@ -30,5 +30,14 @@ def main():
     
     to_do_tasks.pop(remove_task)
     print(f"Eliminaste {remove_task}")
+    
+  #Bucle
+  
+    
+    #Menú
+  print("Bienvenido a tu gestor de tareas.")
+  print("¿Qué quieres hacer?")
+  print("1. Agregar tarea\n2. Mostrar tareas\n3. Eliminar tarea\n4. Completar tarea\n5. Salir")
+    
 
 main()
