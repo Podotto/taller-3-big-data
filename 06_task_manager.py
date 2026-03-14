@@ -32,18 +32,25 @@ def main():
     print(f"Eliminaste {remove_task}")
     
   #Bucle
-  
+  while True:
     
-  #Menú
-  print("Bienvenido a tu gestor de tareas.")
-  print("1. Agregar tarea\n2. Mostrar tareas\n3. Eliminar tarea\n4. Completar tarea\n5. Salir")
-  
-  option = int(input("¿Qué quieres hacer?: "))
-  
-  match option:
+    #Menú
+    print("Bienvenido a tu gestor de tareas.")
+    print("1. Agregar tarea\n2. Mostrar tareas\n3. Eliminar tarea\n4. Completar tarea\n5. Salir")
     
-    case 1:
-      add_task()
+    option = int(input("¿Qué quieres hacer?: "))
+    
+    match option:
+      
+      case 1:
+        add_task()
+        
+      case 2:
+        show_tasks()
+        
+      case 5:
+        print("¡Hasta luego!")
+        break
     
 
 main()
