@@ -34,10 +34,16 @@ def main():
   #Bucle
   
     
-    #Menú
+  #Menú
   print("Bienvenido a tu gestor de tareas.")
-  print("¿Qué quieres hacer?")
   print("1. Agregar tarea\n2. Mostrar tareas\n3. Eliminar tarea\n4. Completar tarea\n5. Salir")
+  
+  option = int(input("¿Qué quieres hacer?: "))
+  
+  match option:
+    
+    case 1:
+      add_task()
     
 
 main()
