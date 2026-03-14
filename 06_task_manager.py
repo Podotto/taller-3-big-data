@@ -14,15 +14,16 @@ def main():
 
   #Función para ver tareas
   def show_tasks():
+    print("Tareas por hacer")
     for i in to_do_tasks:
       print ("☐", i)
-      
+     
+    print("Tareas completadas")  
     for i in completed_tasks:
-      print("[☑]", i)
+      print("☑", i)
 
   #Función para eliminar tareas
   def delete_task():
-    
     for i, v in enumerate(to_do_tasks):
       print (i, v)
     
@@ -32,9 +33,22 @@ def main():
     
   #Función para completar tarea
   def complete_task():
-    
     for i, v in enumerate(to_do_tasks):
       print ("☐", i, v)
+      
+    task_done = int(input("¿Cuál tarea completaste?: "))
+    completed_tasks.append(to_do_tasks.pop(task_done))
+
+    
+    for i in to_do_tasks:
+      print ("☐", i)
+    
+    for i in completed_tasks:
+      print("☑", i)
+      
+    
+    
+    
       
   #Bucle
   while True:
