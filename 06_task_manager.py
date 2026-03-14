@@ -46,10 +46,6 @@ def main():
     for i in completed_tasks:
       print("☑", i)
       
-    
-    
-    
-      
   #Bucle
   while True:
     
@@ -76,6 +72,8 @@ def main():
       case 5:
         print("¡Hasta luego!")
         break
-    
-
+      
+      case 6:
+        print("No es una opción válida")
+  
 main()
