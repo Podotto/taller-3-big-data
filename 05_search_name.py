@@ -6,9 +6,9 @@ def main():
   # Función para buscar nombres
   def search_name():
     name_input = input("Name: ")
-    
     if name_input in names:
       print("Student found.")
+      
     else:
       print("Student not found.")
       
