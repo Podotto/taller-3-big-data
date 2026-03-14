@@ -1,11 +1,11 @@
 def main():
   
   # Lista de nombres
-  names = ["León", "Grethel", "Maria", "Emilio", "Kamila", "Mia", "Elliot"]
+  names = ["grethel", "emilio", "león", "maria", "kamila", "mia", "elliot"]
   
   # Función para buscar nombres
   def search_name():
-    name_input = input("Name: ")
+    name_input = input("Name: ").lower()
     if name_input in names:
       print("Student found.")
       
@@ -15,7 +15,7 @@ def main():
       
   # Función para añadir nombres
   def add_name():
-    new_student = input("Name: ")
+    new_student = input("Name: ").lower()
     names.append(new_student)
     print(f"Added {new_student} to the database.")
       
