@@ -137,3 +137,5 @@ El nombre que se ingresa en la variable name_input se compara con los nombres qu
 #### *3. ¿Qué ocurre si no existe?*
 
 R/: Si no existe el estudiante, entonces el programa le muestra un mensaje de que no se encontró el estudiante y tiene la opción de añadirlo a la base de datos una vez regresa al menú principal.
+
+.
